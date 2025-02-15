@@ -1,82 +1,10 @@
-<<<<<<< HEAD
-body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border: 2px solid #333; /* Added border */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
-    color: #333;
-    border-bottom: 1px solid #ccc; /* Added bottom border for headings */
-    padding-bottom: 5px;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    margin-bottom: 10px;
-}
-
-.skills {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skills li {
-    background: #007BFF;
-    color: white;
-    padding: 5px;
-    margin: 5px 0;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Table styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-}
-
-td {
-    padding: 10px;
-    border: 1px solid #ccc; /* Added border to table cells */
-=======
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* General Styles */
 body {
     font-family: 'Playfair Display', serif;
     line-height: 1.6;
     background: #e7fcff;
+    margin: 0;
+    padding: 20px;
 }
 
 header {
@@ -85,6 +13,24 @@ header {
     padding: 10px 0;
 }
 
+/* Logo Styles */
+.logo-container {
+    text-align: center; /* Center the logo and text */
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+.logo-text {
+    font-size: 1.5em; /* Adjust the font size for the company name */
+    color: white; /* Change the color to match your theme */
+}
+
+.logo-image {
+    max-width: 150px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 5px; /* Space above the logo */
+}
+
+/* Navigation Styles */
 nav ul {
     display: flex;
     justify-content: center;
@@ -100,8 +46,9 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
-    background-image: url('https://static.vecteezy.com/system/resources/previews/002/597/374/non_2x/modern-light-blue-geometric-triangle-shape-overlapping-layer-background-with-copy-space-abstract-technology-blue-color-banner-modern-futuristic-pattern-design-illustration-vector.jpg'); 
+    background-image: url('https://img.pikbest.com/backgrounds/20220119/technology-light-blue-minimalist-background_6234269.jpg!sw800'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -117,32 +64,7 @@ nav ul li a {
     padding: 20px;
     border-radius: 10px;
 }
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #2e8bde;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-    margin-top: 20px;
-}
-
-.cta-button:hover {
-    background: #98bdde;
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
+/* Services Section */
 .services-container {
     display: flex;
     justify-content: center;
@@ -154,28 +76,49 @@ section {
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
-    flex: 1 1 200px;
+    flex: 1 1 300px; /* Adjusted to allow for more space */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
+.service-image {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+.service-item h3 {
+    margin-top: 15px; /* Space above the heading */
+}
+
+.service-item p {
+    margin-top: 10px; /* Space above the paragraph */
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #5a718d;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Footer */
 footer {
-    background: #022646;
+    background: #1d4c75;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-    }
-
-    .services-container {
         flex-direction: column;
     }
 
     h1 {
         font-size: 2.5em;
     }
->>>>>>> c064904 (Landing Page)
 }
